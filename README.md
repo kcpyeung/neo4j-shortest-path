@@ -10,6 +10,7 @@ In irb:
 
 ```ruby
 require 'sp'
+Places.create
 nus = Place.find(:name => "NUS").first
 changi = Place.find(:name => "Changi").first
 nus.shortest_path_to(changi)
